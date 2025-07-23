@@ -1,0 +1,17 @@
+name: TRComfort
+version: 1.0
+main: com.tr.Comfort.TRComfort
+api-version: 1.20
+description: 违禁词检测与玩家安慰系统
+author: YourName
+
+commands:
+  trc:
+    description: 发送安慰消息给玩家
+    usage: /trc <玩家> <内容>
+    aliases: [comfort]
+
+permissions:
+  trcomfort.exempt:
+    description: 豁免违禁词检测
+    default: op
