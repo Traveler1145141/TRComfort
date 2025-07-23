@@ -1,0 +1,39 @@
+# TRComfort 配置文件
+version: 1.0
+
+# 是否启用违禁词检测
+enable: true
+
+# 是否在控制台输出违禁词警告
+log-to-console: true
+
+# 违禁词列表（不区分大小写）
+banned-words:
+  - fuck
+  - shit
+  - bitch
+  - asshole
+  - idiot
+  - stupid
+  - hate
+  - kill
+  - die
+  - moron
+  # 添加中文违禁词示例：
+  - 傻逼
+  - 垃圾
+  - 去死
+  - 草泥马
+
+# 当检测到违禁词时
+# 是否替换违禁词（true：替换为***，false：不处理消息）
+replace-banned-words: true
+replacement-string: '***'
+
+# 是否发送警告消息给玩家
+warn-player: true
+# 警告消息内容
+warn-message: "§c请注意用语文明！"
+
+# 安慰消息格式
+comfort-format: "§6[安慰] §f{message}"
